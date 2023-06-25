@@ -237,7 +237,7 @@ nav ul li a:hover {
     background-image: url(./Images/007.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:left;
+    background-position:center;
     
 }
 
@@ -483,6 +483,11 @@ li p {
         margin-bottom: 3px;
         line-height: 30px;
     }
+    .heading{
+        padding-left: 9%;
+        font-size: 15px;
+    }
+   
 }
 
 @media (max-width: 678px) {
@@ -649,7 +654,9 @@ h5{
     margin-bottom: 40px;
 }
 
-
+ /*--------------------------------------------------------------
+# AWARDS SECTION 
+--------------------------------------------------------------*/
 .heading {
     text-align: center;
     font-size: 30px;
@@ -658,7 +665,6 @@ h5{
 
 ul {
     list-style: none;
-    
     
 } 
 
@@ -683,10 +689,22 @@ li p{
 li .icon-space {
     width: 20px;
 }
-@media (max-width: 768px) {
-    .header__wrapper {
-        width: 100%;
+@media (max-width: 320px) {
     }
+    p{
+        font-size: 12px;
+        padding:.5rem ;
+    }
+   li h4,p{
+       font-weight:normal;
+
+
+        
+    }
+        
+    
+   
+    
 } 
  
 /*--------------------------------------------------------------
