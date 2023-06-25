@@ -7,3 +7,5 @@ navIcon.addEventListener("click", () => {
   // Toggle the 'active' class on navLinks
   navLinks.classList.toggle("active");
 });
+
+

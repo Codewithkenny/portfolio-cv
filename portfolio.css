@@ -232,12 +232,12 @@ nav ul li a:hover {
 .hero {
     /* height: 100vh; */
     margin-top: 50px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 40px);
     width: 100%;
-    background-image: url(./Images/002.jpg);
+    background-image: url(./Images/007.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center;
+    background-position:left;
     /* background-color: #191919; */
 }
 
@@ -416,7 +416,7 @@ button a {
 
 
 /* EDUCATIONAL STYLE STARTS */
-.educational__wrapper{
+.educational__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -446,19 +446,65 @@ li i {
 }
 
 li p {
-    line-height: 2;
+    line-height: 10px;
     color: #fff;
     margin: 0;
+   
 }
 
 .education-title {
     margin-bottom: 5px;
+    line-height: 10px;
+    
 }
 
 .education-duration {
     margin: 0;
+    line-height: 10px;
 }
 
+.educational__wrapper li p {
+    margin-bottom: 10px;
+
+}
+@media (max-width: 320px) {
+
+    li>.education-title,
+    li>.education-duration {
+        font-size: 12px;
+        margin-bottom: 3px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 678px) {
+
+    li>.education-title,
+    li>.education-duration {
+        font-size: 14px;
+        margin-bottom: 5px;
+        line-height: 20px;
+    }
+}
+@media (min-width: 350px) and (max-width: 450px) {
+
+    li>.education-title,
+    li>.education-duration {
+        font-size: 14px;
+        margin-bottom: 5px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 678px) {
+
+    li>.education-title,
+    li>.education-duration {
+        font-size: 16px;
+        margin-bottom: 7px;
+        line-height: 10px;
+    }
+}
 /* EDUCATIONAL STYLE ENDS */
 
 /* SKILL STYLE STARTS */
@@ -635,6 +681,62 @@ li .icon-space {
     }
 } 
  
+/*--------------------------------------------------------------
+# GALLERY SECTION 
+--------------------------------------------------------------*/
+
+.image-gallery {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.slide {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+.slide:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries */
+@media (max-width: 480px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .image-container {
+        justify-content: space-between;
+    }
+}
+
+
+
 
 
 /*--------------------------------------------------------------
